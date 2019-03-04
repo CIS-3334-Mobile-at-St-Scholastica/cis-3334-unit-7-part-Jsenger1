@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeartDetailActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="32dp"
+        android:text="Heart Rate Tracker"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPulseDetail"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPulseDetail"
+        app:layout_constraintStart_toStartOf="@+id/textViewPulseDetail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPulseDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Pulse:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPulseDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="56dp"
+        android:text="Pulse Here:"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Range:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewRange"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRange"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="22dp"
+        android:text="Range Here:"
+        app:layout_constraintStart_toStartOf="@+id/textViewPulseDetail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPulseDetail" />
+</android.support.constraint.ConstraintLayout>
